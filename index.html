@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="header-section">
+                <div class="profile-pic">
+                    <img src="" alt="Profile Picture">
+                </div>
+                <div class="header-info" >
+                    <div class="profile-text"></div>
+                    <div class="profile-title"></div>  
+                </div>
+            </div>
+            <div class="main-content">
+                <div class="left-content">
+                    <div class="contact-section" id="personal-details">
+                        <div class="heading">My Contact</div>
+                        <div class="border-bottom"></div>
+                        <div>
+                            <ul class="horizontal-ul personal-details-list">
+                                <!-- <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M22 6C22 4.9 21.1 4 20 4H4C2.9 4 2 4.9 2 6V18C2 19.1 2.9 20 4 20H20C21.1 20 22 19.1 22 18V6M20 6L12 11L4 6H20M20 18H4V8L12 13L20 8V18Z"></path>
+                                    </svg>
+                                    <a href="#">hello@reallygreatsite.com</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path>
+                                    </svg>
+                                    <a href="#">+123-456-7890</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"></path>
+                                    </svg>
+                                    <a href="#">123 Anywhere St., Any City</a>
+                                </li>
+                                <li>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                                        <path d="M16.36,14C16.44,13.34 16.5,12.68 16.5,12C16.5,11.32 16.44,10.66 16.36,10H19.74C19.9,10.64 20,11.31 20,12C20,12.69 19.9,13.36 19.74,14M14.59,19.56C15.19,18.45 15.65,17.25 15.97,16H18.92C17.96,17.65 16.43,18.93 14.59,19.56M14.34,14H9.66C9.56,13.34 9.5,12.68 9.5,12C9.5,11.32 9.56,10.65 9.66,10H14.34C14.43,10.65 14.5,11.32 14.5,12C14.5,12.68 14.43,13.34 14.34,14M12,19.96C11.17,18.76 10.5,17.43 10.09,16H13.91C13.5,17.43 12.83,18.76 12,19.96M8,8H5.08C6.03,6.34 7.57,5.06 9.4,4.44C8.8,5.55 8.35,6.75 8,8M5.08,16H8C8.35,17.25 8.8,18.45 9.4,19.56C7.57,18.93 6.03,17.65 5.08,16M4.26,14C4.1,13.36 4,12.69 4,12C4,11.31 4.1,10.64 4.26,10H7.64C7.56,10.66 7.5,11.32 7.5,12C7.5,12.68 7.56,13.34 7.64,14M12,4.03C12.83,5.23 13.5,6.57 13.91,8H10.09C10.5,6.57 11.17,5.23 12,4.03M18.92,8H15.97C15.65,6.75 15.19,5.55 14.59,4.44C16.43,5.07 17.96,6.34 18.92,8M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"></path>
+                                    </svg>
+                                    <a href="#">www.reallygreatsite.com</a>
+                                </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill" id="skill">
+                        <div class="heading">Hard Skill</div>
+                        <div class="border-bottom"></div>
+                        <div>
+                            <ul class="skill-ul">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skill" id="projects">
+                        <div class="heading">Soft Skill</div>
+                        <div class="border-bottom"></div>
+                        <div>
+                            <ul class="skill-ul projects-list">
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="educational" id="educational-section">
+                        <div class="heading">Education Background</div>
+                        <div class="border-bottom"></div>
+                        <ul class="educational-ul">
+
+                        </ul>
+                    </div>
+                    <div class="references skill">
+                        <div class="heading">References</div>
+                        <div class="border-bottom"></div>
+                        <div class="reference-list">
+                            <!-- References will be populated here -->
+                        </div>
+                    </div>
+                    <div class="language-section skill">
+                        <div class="heading">Languages</div>
+                        <div class="border-bottom"></div>
+                        <ul class="language-list educational-ul">
+                            
+                        </ul>
+                    </div>
+                </div>
+                <div class="right-content">
+                    <div class="contact-section about-me">
+                        <div class="heading">About Me</div>
+                        <div class="border-bottom"></div>
+                        <div class="right-section-paragraph">
+                            
+                        </div>
+                    </div>
+                    <div class="skill" id="experience-section">
+                        <div class="heading"></div>
+                        <div class="border-bottom"></div>
+                    </div>
+                    <div class="skill" id="award-section">
+                        <div class="heading">Achievements</div>
+                        <div class="border-bottom"></div>
+
+                    </div>
+                    <div class="activities skill">
+                        <div class="heading">Activities</div>
+                        <div class="border-bottom"></div>
+                        <div class="activity-list">
+                            <!-- Activities will be populated here -->
+                        </div>
+                    </div>
+                    <div class="interests skill padding-bottom-20px">
+                        <div class="heading">Interests</div>
+                        <div class="border-bottom"></div>
+                        <div class="interests-list">
+                            <!-- Interests will be populated here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer"></div>
+        </div>
+    </div>
+    <script>
+        function renderReferences(referencesData) {
+    // Check if the references section exists
+    const uiSection = document.querySelector('.references .reference-list');
+    if (!uiSection) {
+        console.error('References section not found');
+        return;
+    }
+
+    // Check if the references data contains forms
+    if (referencesData.forms && referencesData.forms.length > 0) {
+        // Sort the references data by `order_index`
+        const forms = referencesData.forms.sort((a, b) => a.order_index - b.order_index);
+
+        // Clear existing references list
+        uiSection.innerHTML = '';
+
+        // Iterate over each form and create reference entries
+        forms.forEach((form) => {
+            const referenceItem = document.createElement('div');
+            referenceItem.classList.add('reference-item');
+
+            // Create HTML structure for each reference
+            referenceItem.innerHTML = `
+                <p><strong>${form.reference_name}</strong></p>
+                <p>${form.position}, ${form.company_name}</p>
+                <p>Email: <a href="mailto:${form.email}">${form.email}</a></p>
+                <p>Phone: ${form.phone}</p>
+            `;
+
+            // Append the reference item to the list
+            uiSection.appendChild(referenceItem);
+        });
+    } else {
+        console.warn('No references found');
+    }
+}
+
+        function renderInterests(interestsData) {
+    // Check if the interests section exists
+    const uiSection = document.querySelector('.interests .interests-list');
+    if (!uiSection) {
+        console.error('Interests section not found');
+        return;
+    }
+
+    // Check if the interests data contains forms
+    if (interestsData.forms && interestsData.forms.length > 0) {
+        // Sort the interests data by `order_index`
+        const forms = interestsData.forms.sort((a, b) => a.order_index - b.order_index);
+
+        // Clear existing interests list
+        uiSection.innerHTML = '';
+
+        // Iterate over each form and create interest entries
+        forms.forEach((form) => {
+            const interestItem = document.createElement('div');
+            interestItem.classList.add('interest-item');
+
+            // Create HTML for the interest
+            interestItem.innerHTML = form.description;
+
+            // Append the interest item to the list
+            uiSection.appendChild(interestItem);
+        });
+    } else {
+        console.warn('No interests found');
+    }
+}
+        function renderActivities(activitiesData) {
+    // Check if the activities section exists
+    const uiSection = document.querySelector('.activities .activity-list');
+    if (!uiSection) {
+        console.error('Activities section not found');
+        return;
+    }
+
+    // Check if the activities data contains forms
+    if (activitiesData.forms && activitiesData.forms.length > 0) {
+        // Sort the activities data by `order_index`
+        const forms = activitiesData.forms.sort((a, b) => a.order_index - b.order_index);
+
+        // Clear existing activity list
+        uiSection.innerHTML = '';
+
+        // Iterate over each form and create activity entries
+        forms.forEach((form) => {
+            const activityItem = document.createElement('div');
+            activityItem.classList.add('activity-item');
+
+            // Create HTML for the activity
+            activityItem.innerHTML = `
+                <h3>${form.activity_title}</h3>
+                <p><strong>Position:</strong> ${form.position}</p>
+                <p><strong>Duration:</strong> ${form.start_date} - ${form.end_date}</p>
+                <div>${form.details}</div>
+            `;
+
+            // Append the activity item to the list
+            uiSection.appendChild(activityItem);
+        });
+    } else {
+        console.warn('No activities found');
+    }
+}
+        function renderHeaderInfo(headerData) {
+        // Check if the header info section exists
+            const uiSection = document.querySelector('.header-info');
+            if (!uiSection) {
+                console.error('Header info section not found');
+                return;
+            }
+
+            // Check if the header data contains forms and if there are any header forms
+            if (headerData.forms && headerData.forms.length > 0) {
+                // Sort the header data by `order_index`
+                const forms = headerData.forms.sort((a, b) => a.order_index - b.order_index);
+
+                // Iterate over each form and set the name and designation
+                forms.forEach((form) => {
+                    const profileText = uiSection.querySelector('.profile-text');
+                    const profileTitle = uiSection.querySelector('.profile-title');
+
+                    if (profileText && profileTitle) {
+                        profileText.textContent = form.name || "Default Name"; // Fallback if name is missing
+                        profileTitle.textContent = form.designation || "Default Title"; // Fallback if designation is missing
+                    } else {
+                        console.error('Profile text or title element not found');
+                    }
+                });
+            } else {
+                console.warn('No header forms found');
+            }
+        }
+
+        function renderSignature(signatureData) {
+    // Check if the signature data section exists
+    const uiSection = document.querySelector('.profile-pic');
+    if (!uiSection) {
+        console.error('Profile picture section not found');
+        return;
+    }
+
+    // Check if the signature data contains forms and if there are any signatures
+    if (signatureData.forms && signatureData.forms.length > 0) {
+        // Sort the signature data by `order_index`
+        const forms = signatureData.forms.sort((a, b) => a.order_index - b.order_index);
+
+        // Iterate over each form and create signature entries
+        forms.forEach((form) => {
+            // Check if the signature photo path is available
+            if (form.signature_photo_path) {
+                const imgElement = uiSection.querySelector('img'); // Select the existing img element
+                imgElement.src = form.signature_photo_path; // Update the src attribute with the signature photo path
+            } else {
+                console.warn('Signature photo path is missing');
+            }
+        });
+    }
+}
+        
+        function renderSummary(summaryData) {
+            // Check if the summary section exists
+            const uiSection = document.querySelector('.about-me');
+            if (!uiSection) {
+                console.error('Summary section not found');
+                return;
+            }
+
+            // Check if the summary data contains forms and if there are any summaries
+            if (summaryData.forms && summaryData.forms.length > 0) {
+                // Sort the summary data by `order_index`
+                const forms = summaryData.forms.sort((a, b) => a.order_index - b.order_index);
+
+                // Make the section visible
+                uiSection.classList.remove('hidden');
+
+                // Set the section title if available
+                const sectionTitle = summaryData.title || "Summary";
+                uiSection.querySelector('.heading').textContent = sectionTitle;
+
+                // Clear out the existing summary text
+                const uiSectionParagraph = uiSection.querySelector('.right-section-paragraph');
+                if (!uiSectionParagraph) {
+                    console.error('Summary paragraph not found');
+                    return;
+                }
+                uiSectionParagraph.innerHTML = '';
+
+                // Add summary text to the paragraph
+                forms.forEach((form) => {
+                    uiSectionParagraph.textContent = form.summary; // You can use innerHTML if you want to include HTML tags
+                });
+            }
+        }
+
+        function renderProjects(projectData) {
+    // Check if the project section exists
+    const uiSection = document.querySelector('#projects');
+    if (!uiSection) {
+        console.error('Projects section not found');
+        return;
+    }
+
+    // Check if the project data contains forms and if there are any projects
+    if (projectData.forms && projectData.forms.length > 0) {
+        // Sort the project data by `order_index`
+        const forms = projectData.forms.sort((a, b) => a.order_index - b.order_index);
+
+        // Make the section visible
+        uiSection.classList.remove('hidden');
+
+        // Set the section title if available
+        const sectionTitle = projectData.title || "Projects";
+        uiSection.querySelector('.heading').textContent = sectionTitle;
+
+        // Clear out the existing project list
+        const uiSectionItems = uiSection.querySelector('.projects-list');
+        if (!uiSectionItems) {
+            console.error('Project list (ul) not found');
+            return;
+        }
+        uiSectionItems.innerHTML = '';
+
+        // Iterate over each form and create project entries
+        forms.forEach((form) => {
+            const projectItem = document.createElement('li');
+            projectItem.innerHTML = `<strong>${form.title}</strong>${form.details}`;
+            uiSectionItems.appendChild(projectItem);
+        });
+    }
+}
+
+        function renderSkills(skillsData) {
+    // Check if the skill section exists
+    const uiSection = document.querySelector('#skill');
+    if (!uiSection) {
+        console.error('Skill section not found');
+        return;
+    }
+
+    // Check if the skills data contains forms and if there are any skills
+    if (skillsData.forms && skillsData.forms.length > 0) {
+        // Sort the skills data by `order_index`
+        const forms = skillsData.forms.sort((a, b) => a.order_index - b.order_index);
+
+        // Make the section visible
+        uiSection.classList.remove('hidden');
+
+        // Set the section title if available
+        const sectionTitle = skillsData.title || "Skills";
+        uiSection.querySelector('.heading').textContent = sectionTitle;
+
+        // Clear out the existing list of skills
+        const uiSectionItems = uiSection.querySelector('.skill-ul');
+        if (!uiSectionItems) {
+            console.error('Skill list (ul) not found');
+            return;
+        }
+        uiSectionItems.innerHTML = '';
+
+        // Iterate over each form and create skill entries
+        forms.forEach((form) => {
+            const skillItem = document.createElement('li');
+            skillItem.textContent = form.skill;
+
+            // Append each skill item to the list
+            uiSectionItems.appendChild(skillItem);
+        });
+    }
+}
+        
+        function renderPersonalDetails(personalData) {
+    // Check if the personal details section exists
+    const uiSection = document.querySelector('#personal-details');
+    if (!uiSection) {
+        console.error('Personal details section not found');
+        return;
+    }
+
+    // Check if the personal data contains forms and if there are any details
+    if (personalData.forms && personalData.forms.length > 0) {
+        // Sort the personal data by `order_index`
+        const forms = personalData.forms.sort((a, b) => a.order_index - b.order_index);
+
+        // Make the section visible
+        uiSection.classList.remove('hidden');
+
+        // Set the section title if available
+        const sectionTitle = personalData.title || "Personal Details";
+        uiSection.querySelector('.heading').textContent = sectionTitle;
+
+        // Clear out the existing personal details
+        const uiSectionDetails = uiSection.querySelector('.personal-details-list');
+        if (!uiSectionDetails) {
+            console.error('Personal details list (ul) not found');
+            return;
+        }
+        uiSectionDetails.innerHTML = '';
+
+        // Iterate over each form and create personal detail entries
+        forms.forEach((form) => {
+            const detailItems = [
+                { label: "Name", value: form.name },
+                { label: "Designation", value: form.designation },
+                { label: "Email", value: `<a href="mailto:${form.email}">${form.email}</a>` },
+                { label: "Phone", value: `<a href="tel:${form.phone}">${form.phone}</a>` },
+                { label: "Address", value: form.address },
+                { label: "Date of Birth", value: form.dob },
+                { label: "Website", value: `<a href="${form.website}" target="_blank">${form.website}</a>` },
+                { label: "LinkedIn", value: `<a href="${form.linked_in}" target="_blank">${form.linked_in}</a>` },
+            ];
+
+            // Create a list item for each detail
+            detailItems.forEach(detail => {
+                const detailItem = document.createElement('li');
+                detailItem.innerHTML = `<strong>${detail.label}:</strong> ${detail.value}`;
+                uiSectionDetails.appendChild(detailItem);
+            });
+        });
+    }
+}
+        
+        function renderLanguage(languageData) {
+        
+            const uiSection = document.querySelector('.language-section');
+            if (!uiSection) {
+                console.error('Language section not found');
+                return;
+            }
+
+            if (languageData.forms && languageData.forms.length > 0) {
+                // Sort the language data by `order_index`
+                const forms = languageData.forms.sort((a, b) => a.order_index - b.order_index);
+
+                // Make the section visible
+                uiSection.classList.remove('hidden');
+
+                // Set the section title if available
+                const sectionTitle = languageData.title || "Languages";
+                uiSection.querySelector('.heading').textContent = sectionTitle;
+
+                // Clear out the existing list of languages
+                const uiSectionItems = uiSection.querySelector('.language-list');
+                if (!uiSectionItems) {
+                    console.error('Language list (ul) not found');
+                    return;
+                }
+                uiSectionItems.innerHTML = '';
+
+                // Iterate over each form and create language entries
+                forms.forEach((form) => {
+                    const languageItem = document.createElement('li');
+                    languageItem.textContent = form.language;
+
+                    // Append each language item to the list
+                    uiSectionItems.appendChild(languageItem);
+                });
+            }
+            }
+        
+        function renderAward(awardData) {
+            if (awardData.forms && awardData.forms.length > 0) {
+                // Sort the awards by `order_index`
+                const forms = awardData.forms.sort((a, b) => a.order_index - b.order_index);
+
+                // Get the main award section and make it visible
+                const uiSection = document.querySelector('#award-section');
+                uiSection.classList.remove('hidden');
+
+                // Set the section title if available, or default to "Achievements"
+                const sectionTitle = awardData.title || "Achievements";
+                uiSection.querySelector('.heading').textContent = sectionTitle;
+
+                // Clear out existing achievement items
+                uiSection.querySelectorAll('.achievements').forEach(item => item.remove());
+
+                // Get the border div to insert achievements before it
+                const borderBottom = uiSection.querySelector('.border-bottom');
+
+                // Iterate over each form and create achievement entries
+                forms.forEach((form) => {
+                    // Create a new div for the achievement item
+                    const achievementDiv = document.createElement('div');
+                    achievementDiv.classList.add('achievements');
+
+                    // Fill in the award details
+                    achievementDiv.innerHTML = `
+                        <div class="date">${form.date}</div>
+                        <div>
+                            <strong>${form.award_name}</strong> (${form.issuing_org})
+                            ${form.description}
+                        </div>
+                    `;
+
+                    // Insert each achievement item before the border bottom
+                    uiSection.appendChild(achievementDiv);
+                });
+            }
+        }
+
+        function renderExperience(sectionData) {
+            if (sectionData.forms && sectionData.forms.length > 0) {
+                // Sort forms by `order_index`
+                const forms = sectionData.forms.sort((a, b) => a.order_index - b.order_index);
+
+                // Get the main experience section and make it visible
+                const uiSection = document.getElementById('experience-section');
+                uiSection.classList.remove('hidden');
+
+                // Set the section title
+                const sectionTitle = sectionData.title || "Professional Experience";
+                uiSection.querySelector('.heading').textContent = sectionTitle;
+
+                // Clear out existing experience items
+                uiSection.querySelectorAll('.experience-item').forEach(item => item.remove());
+
+                // Iterate over each form and create experience entries
+                forms.forEach((form) => {
+                    // Create a new div for the experience item
+                    const experienceDiv = document.createElement('div');
+                    experienceDiv.classList.add('experience-item');
+
+                    // Fill in the experience details
+                    experienceDiv.innerHTML = `
+                        <div class="professional-experience">${form.company_name} | ${form.position}</div>
+                        <div class="professional-experience-date">${form.start_date} – ${form.end_date}</div>
+                        <div class="responsibilities">Key responsibilities:</div>
+                        <div class="padding-bottom-20px">${form.details}</div>
+                    `;
+
+                    // Append the new experience item to the main section
+                    uiSection.appendChild(experienceDiv);
+                });
+            }
+        }
+        
+        function renderEducation(educationData) {
+            if (educationData.forms && educationData.forms.length > 0) {
+                // Sort the education data by `order_index`
+                const forms = educationData.forms.sort((a, b) => a.order_index - b.order_index);
+
+                // Get the main educational section and make it visible
+                const uiSection = document.querySelector('#educational-section');
+                uiSection.classList.remove('hidden');
+
+                // Set the section title if available, or default to "Education Background"
+                const sectionTitle = educationData.title || "Education Background";
+                uiSection.querySelector('.heading').textContent = sectionTitle;
+
+                // Clear out the existing list of educational items
+                const uiSectionItems = uiSection.querySelector('.educational-ul');
+                uiSectionItems.innerHTML = '';
+
+                // Iterate over each form and create education entries
+                forms.forEach((form) => {
+                    // Create a new list item for the education item
+                    const educationItem = document.createElement('li');
+
+                    // Fill in the education details
+                    educationItem.innerHTML = `
+                        <div>${form.institution}</div>
+                        <div>${form.degree_title}</div>
+                        <div>${form.start_date} - ${form.end_date}</div>
+                        <div>Grade: ${form.grade}</div>
+                        ${form.details}
+                    `;
+
+                    // Append each education item to the list
+                    uiSectionItems.appendChild(educationItem);
+                });
+            }
+        }
+        fetch('data.json')
+            .then(response => {
+                // Ensure the response is OK
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                // Parse the JSON data
+                return response.json();
+            })
+            .then(data => {
+                // Log or work with the JSON data
+                renderAward(data.award);
+                renderExperience(data.experience);
+                renderEducation(data.education);
+                renderLanguage(data.language);
+                renderPersonalDetails(data.personal_details);
+                renderSkills(data.skill);
+                renderProjects(data.project);
+                renderSummary(data.summary);
+                renderSignature(data.signature);
+                renderHeaderInfo(data.header_info);
+                renderActivities(data.activitites);
+                renderInterests(data.Interesets);
+                renderReferences(data.reference);
+                // console.log(data.experience);
+                // You can also manipulate the DOM or process the data here
+            })
+            .catch(error => {
+                // Handle errors
+                console.error('There was a problem with the fetch operation:', error);
+            });
+    </script>
+</body>
+</html>

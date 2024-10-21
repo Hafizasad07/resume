@@ -1,0 +1,198 @@
+:root {
+    --bg-color: #8d4b55;
+    --secondary-color: #FFFFFF;
+    --heading-text-color: #942637;
+    --font-family: 'Arial', sans-serif;
+    --font-size-small: 15px;
+    --font-size-xs: 10px;
+    --font-size-18px: 17px;
+    --font-size-medium: 37px;
+    --font-size-mini-small: 8px;
+    --font-size-20px: 20px;
+    --position-relative: relative;
+    --font-weight-bold: 800;
+    --position-absolute: absolute;
+    --font-weight-500 : 500;
+    --d-flex: flex;
+    --flex-direction: column;
+    --cv-padding: 1cm;
+    --width: 500px;
+    --font-weight: bold;
+    --font-style-italic: italic;
+    --text-color-black: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--secondary-color);
+    color: var(--text-color-black);
+}
+
+.container {
+    width: 210mm;
+    margin: 0px auto;
+}
+
+.header-section{
+    background-color: var(--bg-color);
+    display: var(--d-flex);
+    padding: 40px 0px;
+    justify-content: space-evenly;
+    height: 190px;
+}
+
+.profile-text{
+    font-size: var(--font-size-medium);
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-bold);
+}
+
+.profile-title{
+    font-size: var(--font-size-20px);
+    color: var(--secondary-color);
+    font-weight: var(--font-weight-500);
+}
+
+.header-info{
+    display: var(--d-flex);
+    flex-direction: var(--flex-direction);
+}
+
+.profile-pic img{
+    width: 250px;
+    border-radius: 200px;
+}
+
+.educational .heading,
+.skill .heading,
+.contact-section .heading{
+    color: var(--heading-text-color);
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-20px);
+    padding-top: 15px;
+}
+
+.border-bottom{
+    border-bottom: 2px solid #8d4b55;
+    width: 120px;
+    padding-top: 15px;
+    margin-bottom: 20px;
+}
+
+.contact-section{
+    padding-top: 100px;
+}
+
+.horizontal-ul li svg {
+
+    flex-shrink: 0;
+    fill: #1b1c1f;
+    width: 20px; /* Set icon width */
+    height: 20px; /* Set icon height */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.reference-list .reference-item a,
+.reference-list .reference-item p,
+.educational-ul,
+.horizontal-ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: var(--font-size-small);
+}
+
+.horizontal-ul li{
+    display: var(--d-flex);
+    align-items: center;
+    padding-bottom: 10px;
+    font-size: var(--font-size-small);
+}
+
+.educational-ul,
+.skill-ul{
+    margin: 10px 0px 0px 0px;
+    padding: 0 0 0 18px;
+}
+
+.educational-ul li div,
+.skill-ul li{
+    padding-bottom: 5px;
+    font-size: var(--font-size-small);
+}
+
+.educational-ul li{
+    padding-bottom: 10px;
+}
+
+.main-content{
+    display: var(--d-flex);
+    justify-content: space-evenly;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 0px 40px;
+    gap: 30px;
+}
+
+.right-section-paragraph{
+    font-size: var(--font-size-18px);
+    line-height: 25px;
+    padding-bottom: 20px;
+}
+
+.left-content{
+    width: var(--width);
+}
+
+.right-content{
+    width: 500px;
+}
+
+.professional-experience{
+    font-size: var(--font-size-18px);;
+}
+
+.professional-experience-date{
+    font-style: var(--font-style-italic);
+    font-size: var(--font-size-18px);;
+    color: var(--text-color-black) !important;
+}
+
+.responsibilities{
+    font-size: var(--font-size-small);
+    padding-top: 10px;
+}
+
+.padding-bottom-20px{
+    padding-bottom: 20px;
+}
+
+.achievements{
+    /* display: var(--d-flex); */
+    font-size: var(--font-size-18px);
+    padding-bottom: 10px;
+}
+
+.achievements .date{
+    width: 200px;
+}
+
+.right-content .about-me{
+    padding-top: 20px !important;
+}
+
+.footer{
+    background-color: var(--bg-color);
+    height: 20px;
+}
+
+.achievements ul li,
+.interest-item ul li,
+.activity-item ul li,
+#experience-section ul li {
+    padding-bottom: 10px;
+}
