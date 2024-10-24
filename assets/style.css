@@ -168,14 +168,24 @@ body {
 .experience-item,
 .professional-experience{
     font-size: var(--font-size-small);
-    margin-bottom: 0px !important;
+}
+.experience-item {
+    margin-top: 10px;
+}
+.experience-item:first-child {
+    margin-bottom: 0px;
 }
 
+.professional-experience{
+    font-weight: bold;
+    margin-bottom: -3px !important;
+}
 .professional-experience-date{
     font-style: var(--font-style-italic);
     font-size: var(--font-size-small);
     padding-bottom: 5px;
     color: var(--text-color-black) !important;
+    font-weight: bold;
 }
 
 .responsibilities{
@@ -220,4 +230,15 @@ body {
 .interest-item,
 p.pt-8{
     font-size: var(--font-size-mini-small);
+}
+
+#experience-section ul,
+.interests ul,
+.activities ul,
+#award-section ul{
+    padding: 0 0 0 15px;
+}
+
+.projects-list p{
+    padding-bottom: 4px;
 }
