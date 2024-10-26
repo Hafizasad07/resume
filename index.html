@@ -232,53 +232,53 @@
         }
         
         function renderActivities(activitiesData) {
-    // Check if the activities section exists
-    const uiSection = document.querySelector('.activities .activity-list');
-    if (!uiSection) {
-        console.error('Activities section not found');
-        return;
-    }
+            // Check if the activities section exists
+            const uiSection = document.querySelector('.activities .activity-list');
+            if (!uiSection) {
+                console.error('Activities section not found');
+                return;
+            }
 
-    // Check if the activities data contains forms
-    if (activitiesData.forms && activitiesData.forms.length > 0) {
-        // Sort the activities data by `order_index`
-        const forms = activitiesData.forms.sort((a, b) => a.order_index - b.order_index);
+            // Check if the activities data contains forms
+            if (activitiesData.forms && activitiesData.forms.length > 0) {
+                // Sort the activities data by `order_index`
+                const forms = activitiesData.forms.sort((a, b) => a.order_index - b.order_index);
 
-        // Clear existing activity list
-        uiSection.innerHTML = '';
+                // Clear existing activity list
+                uiSection.innerHTML = '';
 
-        // Iterate over each form and create activity entries
-        forms.forEach((form) => {
-            const activityItem = document.createElement('p');
-            activityItem.classList.add('activity-item');
+                // Iterate over each form and create activity entries
+                forms.forEach((form) => {
+                    const activityItem = document.createElement('p');
+                    activityItem.classList.add('activity-item');
 
-            // Create the title
-            const title = document.createElement('p');
-            title.textContent = form.activity_title;
-            activityItem.appendChild(title);
+                    // Create the title
+                    const title = document.createElement('p');
+                    title.textContent = form.activity_title;
+                    activityItem.appendChild(title);
 
-            // Create the position
-            const position = document.createElement('p');
-            position.textContent = `Position: ${form.position}`;
-            activityItem.appendChild(position);
+                    // Create the position
+                    const position = document.createElement('p');
+                    position.textContent = `Position: ${form.position}`;
+                    activityItem.appendChild(position);
 
-            // Create the duration
-            const duration = document.createElement('p');
-            duration.textContent = `Duration: ${form.start_date} - ${form.end_date}`;
-            activityItem.appendChild(duration);
+                    // Create the duration
+                    const duration = document.createElement('p');
+                    duration.textContent = `Duration: ${form.start_date} - ${form.end_date}`;
+                    activityItem.appendChild(duration);
 
-            // Create the details
-            const details = document.createElement('p');
-            details.innerHTML = form.details; // Use innerHTML to render HTML content
-            activityItem.appendChild(details);
+                    // Create the details
+                    const details = document.createElement('p');
+                    details.innerHTML = form.details; // Use innerHTML to render HTML content
+                    activityItem.appendChild(details);
 
-            // Append the activity item to the list
-            uiSection.appendChild(activityItem);
-        });
-    } else {
-        console.warn('No activities found');
-    }
-}
+                    // Append the activity item to the list
+                    uiSection.appendChild(activityItem);
+                });
+            } else {
+                console.warn('No activities found');
+            }
+        }
 
         function renderHeaderInfo(headerData) {
         // Check if the header info section exists
@@ -311,30 +311,30 @@
         }
 
         function renderSignature(signatureData) {
-    // Check if the signature data section exists
-    const uiSection = document.querySelector('.profile-pic');
-    if (!uiSection) {
-        console.error('Profile picture section not found');
-        return;
-    }
+        // Check if the signature data section exists
+        const uiSection = document.querySelector('.profile-pic');
+        if (!uiSection) {
+            console.error('Profile picture section not found');
+            return;
+        }
 
-    // Check if the signature data contains forms and if there are any signatures
-    if (signatureData.forms && signatureData.forms.length > 0) {
-        // Sort the signature data by `order_index`
-        const forms = signatureData.forms.sort((a, b) => a.order_index - b.order_index);
+        // Check if the signature data contains forms and if there are any signatures
+        if (signatureData.forms && signatureData.forms.length > 0) {
+            // Sort the signature data by `order_index`
+            const forms = signatureData.forms.sort((a, b) => a.order_index - b.order_index);
 
-        // Iterate over each form and create signature entries
-        forms.forEach((form) => {
-            // Check if the signature photo path is available
-            if (form.signature_photo_path) {
-                const imgElement = uiSection.querySelector('img'); // Select the existing img element
-                imgElement.src = form.signature_photo_path; // Update the src attribute with the signature photo path
-            } else {
-                console.warn('Signature photo path is missing');
-            }
-        });
-    }
-}
+            // Iterate over each form and create signature entries
+            forms.forEach((form) => {
+                // Check if the signature photo path is available
+                if (form.signature_photo_path) {
+                    const imgElement = uiSection.querySelector('img'); // Select the existing img element
+                    imgElement.src = form.signature_photo_path; // Update the src attribute with the signature photo path
+                } else {
+                    console.warn('Signature photo path is missing');
+                }
+            });
+        }
+        }
         
         function renderSummary(summaryData) {
             // Check if the summary section exists
